@@ -1,5 +1,5 @@
 {% set name = "hgdl" %}
-{% set version = "2.1.3" %}
+{% set version = "2.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lbl-camera/HGDL/archive/{{ version }}.tar.gz
-  sha256: feeda629edf7b8e1a9541998d67cdedd77aa2a50b6c1753fd10dc1eba0214203
+  sha256: 14683f9595bd4b5c35a0b4ddb2e922262510dbf9d05c7efbe73e12c72688e876
   patches:
     - dep.patch
 
