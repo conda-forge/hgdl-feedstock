@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/lbl-camera/HGDL/archive/{{ version }}.tar.gz
   sha256: 14683f9595bd4b5c35a0b4ddb2e922262510dbf9d05c7efbe73e12c72688e876
-  patches:
-    - dep.patch
 
 build:
   noarch: python
@@ -18,19 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
+    - hatchling
+    - hatch-vcs
     - pip
   run:
-    - python >=3.6
-    - numpy
-    - scipy
-    - matplotlib-base
-    - plotly
-    - nbformat
-    - dask-core >=2021.6.2
-    - distributed >=2021.6.2
-    - bokeh
-    - paramiko
+    - python >=3.9
+    - wheel
+    - scipy >=1.13.0,<1.14.dev0
+    - numpy >=1.26.4,<1.27.dev0
+    - dask-core >=2024.5.0,<2024.6.dev0
+    - distributed >=2024.5.0,<2024.6.dev0
     - loguru
 
 test:
