@@ -1,5 +1,5 @@
 {% set name = "hgdl" %}
-{% set version = "2.1.9" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lbl-camera/HGDL/archive/{{ version }}.tar.gz
-  sha256: 7f74326cb17750264898ef8e3a33a8f010bd229077c0a720f7729710f51b09c3
+  sha256: f1f2009180b19b0cb6d03f33b63a52c8d4ca9003ba80c20ef15098643fff7e3b
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python >=3.9
     - wheel
     - scipy >=1.13.0,<1.14.dev0
-    - numpy >=1.26.4,<1.27.dev0
+    - numpy >=2.1.1,<2.2.dev0
     - dask-core >=2024.1.0,<2024.2.dev0
     - distributed >=2024.1.0,<2024.2.dev0
     - loguru
