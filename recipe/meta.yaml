@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - wheel
     - scipy >=1.13.0,<1.14.dev0
     - numpy >=2.1.1,<2.2.dev0
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/lbl-camera/HGDL
