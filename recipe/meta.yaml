@@ -1,5 +1,5 @@
 {% set name = "hgdl" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/lbl-camera/HGDL/archive/{{ version }}.tar.gz
-  sha256: eea78f238b51281d585db7a14c6f7f1b0270fc6e0694a1c48542aebccec886e3
+  sha256: 523735b1a4066182398ea2f38e5a75a2e7b086464afe13bbe8849c45b177909b
 
 build:
   noarch: python
