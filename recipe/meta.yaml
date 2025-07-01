@@ -1,5 +1,5 @@
 {% set name = "hgdl" %}
-{% set version = "2.2.3" %}
+{% set version = "2.3.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/lbl-camera/HGDL/archive/{{ version }}.tar.gz
-  sha256: 523735b1a4066182398ea2f38e5a75a2e7b086464afe13bbe8849c45b177909b
+  sha256: 215e2f685ad26f56d5b5d6f8ad0d6ce399320e023adb191da803c119a76b4b46
 
 build:
   noarch: python
@@ -24,10 +24,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - wheel
-    - scipy >=1.13.0,<1.14.dev0
-    - numpy >=2.1.1,<2.2.dev0
-    - dask-core >=2024.1.0,<2024.2.dev0
-    - distributed >=2024.1.0,<2024.2.dev0
+    - scipy >=1.16.0,<1.17.dev0
+    - numpy >=2.3.1,<2.4.dev0
+    - dask-core >=2025.5.1,<2025.6.dev0
+    - distributed >=2025.5.1,<2025.6.dev0
     - loguru
 
 test:
