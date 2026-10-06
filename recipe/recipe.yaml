@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: hgdl
-  version: "2.4.1"
+  version: "2.4.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/lbl-camera/HGDL/archive/${{ version }}.tar.gz
-  sha256: 7ff61555cda8f410a6855f1ffe7241321d489a3263993c2783f460123d301930
+  sha256: 5b234fa42a8718f604f6654dae83aacc6c27a5b3516b0485e2b96db957190457
 
 build:
   number: 0
